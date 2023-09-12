@@ -10,14 +10,14 @@ int main(void)
 {
 	int firdigit, secdigit;
 
-	for (firdigit = 0; firdigit < 10; firdigit++)
+	for (firdigit = 0; firdigit < 9; firdigit++)
 	{
-		for (secdigit = 0; secdigit < 10 secdigit++)
+		for (secdigit = firdigit + 1; secdigit < 10; secdigit++)
 		{
 			putchar((firdigit % 10) + '0');
 			putchar((secdigit % 10) + '0');
 			
-			if (firdigit == 9 && secdigit == 9)
+			if (firdigit == 8 && secdigit == 9)
 				continue;
 
 			putchar(',');
