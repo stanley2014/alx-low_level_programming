@@ -19,7 +19,6 @@ int main(void)
 			
 			if (firdigit == 8 && secdigit == 9)
 				continue;
-
 			putchar(',');
 			putchar(' ');
 		}
