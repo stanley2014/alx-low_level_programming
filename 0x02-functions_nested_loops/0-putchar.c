@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	_putchar('_');
+	putchar(95);
 	putchar('p');
 	putchar('u');
 	putchar('t');
