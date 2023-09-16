@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- * main - prints the alphabet, in lowercase, followed by a new line
- *
- * Return; Always 0
- */
-
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 void print_alphabet(void)
 {
 	char c;
@@ -18,3 +17,4 @@ void print_alphabet(void)
 
 	_putchar('\n');
 }
+
