@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * * _atoi - converts a string to an integer
+ *  _atoi - converts a string to an integer
  * @s: string to be converted
  * Return: integers in a string
  */
@@ -16,7 +16,7 @@ int _atoi(char *s)
 	mult = 1;
 	neg = 1;
 	num = 0;
-	
+
 	while (s[len] != '\0')
 	{
 		if (s[len] >= '0' && s[len] <= '9')
