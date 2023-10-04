@@ -2,8 +2,8 @@
 #define MYHEADER_H
 
 /* Declarations and definitions */
-include <stdio.h>
-#!/bin/bash
+
+
 
 int _putchar(char c);
 int _islower(int c);
