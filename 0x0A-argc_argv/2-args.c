@@ -3,6 +3,8 @@
 
 /**
  * main - print all arguments received
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: 0
  */
@@ -15,5 +17,5 @@ int main(int argc, char *argv[])
 		printf("%s\n", argv[i]);
 	}
 
-	return 0;
+	return (0);
 }
