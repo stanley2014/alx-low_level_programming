@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-/** 
- * main.c - program that prints the name of file it was comiled from
+/**
+ * main - prints the name of the file
  *
- * Return 0
-*/
-
-int main (void)
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	printf("File: %s\n", __FILE__\n);
-
+	printf("%s\n", __FILE__);
 	return (0);
 }
