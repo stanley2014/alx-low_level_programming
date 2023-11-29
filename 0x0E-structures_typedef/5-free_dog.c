@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * @free_dog - frees the memory allocated for dog_t
+ * free_dog - frees the memory allocated for dog_t
  * @name - name of dog
  * @owner- owner of dog
  * @d - pointer to dog_t
