@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -8,7 +8,7 @@
  * d - pointer to dog_t
  *
  * Return: Always 0
-*/
+ */
 void free_dog(dog_t *d)
 {
 	if(d != NULL)
@@ -18,5 +18,5 @@ void free_dog(dog_t *d)
 		free(d);
 	}
 
-	return(0);
+	return (0);
 }
