@@ -5,7 +5,7 @@
  * free_dog - frees the memory allocated for dog_t
  * @name - name of dog
  * @owner- owner of dog
- * @d - struct dog to dog_t
+ * @d: struct dog to free
  */
 void free_dog(dog_t *d)
 {
