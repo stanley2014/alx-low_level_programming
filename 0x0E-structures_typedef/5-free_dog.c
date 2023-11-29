@@ -5,6 +5,7 @@
  * free dog - frees the memory allocated for dog_t
  * @name - name of dog
  * @owner- owner of dog
+ * @age - age of dog
  * d - pointer to dog_t
  *
  * Return: Always 0
