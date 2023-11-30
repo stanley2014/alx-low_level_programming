@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "function_pointers.h"
 
@@ -9,6 +8,7 @@
  *
  * Return -1
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int n;
@@ -16,10 +16,12 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (!array || !cmp)
 	{
 		for (n = 0; n < size; n++)
-			if cmp(!array[n]){
+			if cmp(!array[n])
+			{
 				return n;
 			}
 	}
+
 	else
 	{
 		if (size <= 0)
