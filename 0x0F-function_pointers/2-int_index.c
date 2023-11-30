@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "function_pointers.h"
+
+/**
+ * @cmp: a pointer to the function to be used to compare values
+ * @size: the number of elememts in the array
+ * int_index- returns index of the first element
+ *
+ * Return -1
+ */
+int int_index(int *array, int size, int (*cmp)(int))
+{
+	int n;
+
+	if (!array || !cmp)
+	{
+		for (n = 0; n < size; n++)
+			if cmp(!array[n]){
+				return n;
+			}
+	}
+	else
+	{
+		if (size <= 0)
+			return -1;
+	}
+
+	return -1;
+}
