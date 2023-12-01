@@ -13,8 +13,11 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
+
 	va_list sp;
+
 	int sum = 0;
+
 
 	va_start(sp, n);
 
