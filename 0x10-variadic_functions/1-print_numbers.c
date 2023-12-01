@@ -21,9 +21,9 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", var_arg(sp, int));
+		printf("%d", va_arg(sp, int));
 
-		if (seperator != NULL)
+		if (i != 0 && seperator != NULL)
 		{
 			printf("%s", seperator);
 		}
