@@ -1,13 +1,13 @@
-#include <stdarg>
+#include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
 
 /**
+ * print_numbers - function that prints numbers
  * @n: number of strings passed to the function
  * @seperator: is the string to be printed between numbers
- * print_numbers - funvtion that prints numbers
  *
- * Return: 0
+ * Return: void
  */
 
 void print_numbers(const char *seperator, const unsigned int n, ...)
@@ -23,10 +23,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(sp, int));
 
-		if (i != n-1 && seperator != NULL)
-		{
+		if (i != n - 1 && seperator != NULL)
 			printf("%s", seperator);
-		}
 	}
 
 	va_end(sp);
