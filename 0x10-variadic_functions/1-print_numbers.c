@@ -1,6 +1,6 @@
 #include <stdarg>
 #include <stdio.h>
-#include "variadic_functions"
+#include "variadic_functions.h"
 
 /**
  * @n: number of strings passed to the function
