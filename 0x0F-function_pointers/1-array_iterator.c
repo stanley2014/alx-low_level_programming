@@ -3,10 +3,11 @@
 #include "function_pointers"
 
 /**
+ * @array: array to iterate through
  * @size: size of the array
  * @action: pointer to the function used
- * array_iterator - this executes a function given as a parameter
- * element of an array.
+ * array_iterator - this executes a function given as a parameter on 
+ * each element of an array.
  *
  * Return: Nothing
  */
