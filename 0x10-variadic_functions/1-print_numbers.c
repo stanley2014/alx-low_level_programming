@@ -10,26 +10,24 @@
  * Return: 0
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
+	va_list list;
 
-	va_list sp;
+	va_start(list, n);
 
-
-	va_start(sp, n);
-	
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(sp, int));
-
-		if (i != n-1 && seperator != NULL)
-		{
-			printf("%s", seperator);
-		}
+		if (!separator)
+			printf("%d", va_arg(list, int));
+		else if (separator && i == 0)
+			printf("%d", va_arg(list, int));
+		else
+			printf("%s%d", separator, va_arg(list, int));
 	}
 
-	va_end(sp);
+	va_end(list);
 
 	printf("\n");
 }
