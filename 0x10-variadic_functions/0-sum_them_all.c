@@ -3,9 +3,9 @@
 #include "variadic_functions.h"
 
 /**
- * @n: argument passed to the function
  * sum_them_all - function that returms the sum of all its
  * parameters
+ * @n: argument passed to the function
  *
  * Return: sum
  */
@@ -23,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum += var_arg(sp, int);
+		sum += va_arg(sp, int);
 	}
 
 	va_end(sp);
